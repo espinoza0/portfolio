@@ -4,11 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --night: #090A0B;
-  --pine-green: #26745E;
+  --night: #090a0b;
+  --pine-green: #26745e;
   --rich-black: #051817;
-  --night-2: #070B0C;
+  --night-2: #070b0c;
   --dark-green: #032623;
+
+  --font-sans: var(--font-onest), ui-sans-serif, system-ui, sans-serif;
 }
 
 @theme inline {
@@ -49,10 +51,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-
 }
-
-
 
 :root {
   --radius: 0.625rem;
@@ -121,6 +120,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+body {
+  font-family: "Onest" !important;
 }
 
 @layer base {
