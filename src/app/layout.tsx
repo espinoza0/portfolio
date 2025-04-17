@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Onest } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
 
 const onest = Onest({
   variable: "--font-onest",
   subsets: ["latin"],
 });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={onest.variable}>
-      <body
-        className={`antialiased bg-[#070B0C]`}
+      <body className={`antialiased min-h-screen bg-slate-950 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)] bg-no-repeat bg-cover`}
       >
         <div className="max-w-[70rem] mx-auto">
           <header className="flex items-center justify-center">
-            <Header/>
+            <Header />
           </header>
           <main>{children}</main>
           <footer></footer>
