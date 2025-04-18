@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="flex items-center justify-center mt-15">
-      <div className="max-w-2xl text-center space-y-6">
+      <div className="max-w-4xl text-center space-y-6">
         <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
           Hola, soy Gabriel
         </h1>
