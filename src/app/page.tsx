@@ -1,7 +1,6 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Link } from "lucide-react";
 import Image from "next/image";
@@ -25,34 +24,62 @@ export default function Home() {
   const proyectos = [
     {
       category: "FRONTEND",
-      title: "EJEMPLO",
+      title: "Tip Calculator App",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis a voluptate eaque. Sunt molestiae reprehenderit.",
-      repoUrl: "https://github.com/usuario/ejemplo-frontend",
-      demoUrl: "https://ejemplo-frontend.vercel.app",
-      tools: [icons.React, icons.Tailwind, icons.SUPABSE, icons.VERCEL],
-      image:
-        "https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Aplicación web sencilla para calcular propinas, usando HTML, CSS y Javascript.",
+      repoUrl: "https://github.com/espinoza0/tip-calculator-app",
+      demoUrl: "https://espinoza0.github.io/tip-calculator-app/",
+      tools: [icons.HTML, icons.CSS, icons.JavaScript],
+      image: "/images/projects/tip-calc.webp",
     },
     {
-      category: "FULLSTACK",
-      title: "Gestor de Tareas",
+      category: "FRONTEND",
+      title: "Job Listing Filter",
       description:
-        "Aplicación para gestionar tareas con autenticación y almacenamiento en la nube.",
-      repoUrl: "https://github.com/usuario/gestor-tareas",
-      demoUrl: "https://gestor-tareas.vercel.app",
-      tools: [icons.React, icons.Tailwind, icons.SUPABSE, icons.VERCEL],
-      image:
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2674&auto=format&fit=crop",
+        "Aplicación web que permite filtrar una lista de ofertas de trabajo mediante tags.",
+      repoUrl: "https://github.com/espinoza0/static-job-listing-filter",
+      demoUrl: "https://grand-cucurucho-515e7f.netlify.app/",
+      tools: [icons.React, icons.Tailwind, icons.Netlify],
+      image: "/images/projects/job-listing.webp",
+    },
+    {
+      category: "FRONTEND",
+      title: "Product List with Cart",
+      description:
+        "Aplicación web que permite agregar productos a un carrito de compras y simular el proceso de pedido en un restaurante.",
+      repoUrl: "https://github.com/espinoza0/product-list-with-cart",
+      demoUrl: "https://lustrous-maamoul-4b44d8.netlify.app/",
+      tools: [icons.React, icons.Tailwind, icons.Netlify, "Material UI"],
+      image: "/images/projects/product-cart.webp",
+    },
+    {
+      category: "FRONTEND",
+      title: "IP Address Tracker",
+      description:
+        "Aplicación web que permite obtener información sobre una dirección IP y mostrar una ubicación en un mapa. Usa la API de IP Geolocation de IPify y la API de Leaflet para generar el mapa.",
+      repoUrl: "https://github.com/espinoza0/ip-address-tracker",
+      demoUrl: "https://ip-address-tracker-main-two.vercel.app/",
+      tools: [icons.React, icons.Tailwind, icons.VERCEL, "API"],
+      image: "/images/projects/ip-tracker.webp",
+    },
+    {
+      category: "FRONTEND",
+      title: "Movie/TV Discover App",
+      description:
+        "Aplicación web que permite buscar y descubrir películas y series de televisión. Usa la API de The Movie Database (TMDB) para la obtención de información del tíulo; actores, tráiler, dónde ver, etc.",
+      repoUrl: "https://github.com/espinoza0/Movie-TV-Discover-App",
+      demoUrl: "https://movie-discover.onrender.com/",
+      tools: [icons.React, icons.Tailwind, "Render", "API", "Material UI"],
+      image: "/images/projects/movie-tv-discover.webp",
     },
     {
       category: "FRONTEND",
       title: "Portafolio Personal",
       description:
         "Mi portafolio personal donde muestro mis proyectos y habilidades.",
-      repoUrl: "https://github.com/usuario/portafolio",
+      repoUrl: "https://github.com/espinoza0/portafolio",
       demoUrl: "https://portafolio-usuario.vercel.app",
-      tools: [icons.React, icons.Tailwind, icons.SUPABSE, icons.VERCEL],
+      tools: [icons.React, icons.Tailwind, 'Shadcn UI', icons.VERCEL],
       image:
         "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2674&auto=format&fit=crop",
     },
@@ -62,7 +89,10 @@ export default function Home() {
     <>
       <Hero />
       {/* experiencia */}
-      <section id="experiencia" className="text-white text-center my-20 max-w-4xl mx-auto">
+      <section
+        id="experiencia"
+        className="text-white text-center my-20 max-w-4xl mx-auto pt-10"
+      >
         <h2 className="text-4xl mt-5">Experiencia</h2>
         <div className="my-5 mx-auto">
           <ol className="relative border-s border-gray-200 dark:border-gray-700 text-left">
@@ -91,7 +121,10 @@ export default function Home() {
         </div>
       </section>
       {/* Proyectos */}
-      <section id="proyectos" className="text-white my-20 max-w-5xl mx-auto text-center">
+      <section
+        id="proyectos"
+        className="text-white my-20 max-w-5xl mx-auto text-center"
+      >
         <h2 className="text-4xl mb-10">Proyectos</h2>
         <div className="my-5">
           <div className="flex flex-col gap-13">
@@ -108,7 +141,12 @@ export default function Home() {
                   <p className="text-gray-300">{project.description}</p>
 
                   <div className="flex gap-2 items-center">
-                    <Button>
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2"
+                    >
                       <Image
                         width={20}
                         height={20}
@@ -117,19 +155,33 @@ export default function Home() {
                         className="object-contain"
                       />
                       Código
-                    </Button>
-                    <Button>
-                      <Link />
+                    </a>
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2"
+                    >
+                      <Link size={17} />
                       Demo
-                    </Button>
+                    </a>
                   </div>
 
                   {/* tools */}
                   <div className="flex items-center gap-2">
                     {project.tools.map((tool, i) => (
-                      <span key={i} className="rounded-xl px-3 bg-slate-900/50 text-sm flex items-center gap-1">
-                        {tool.icon}
-                        {tool.name}
+                      <span
+                        key={i}
+                        className="rounded-xl px-3 bg-slate-900/50 text-sm flex items-center gap-1"
+                      >
+                        {typeof tool === "string" ? (
+                          <span>{tool}</span>
+                        ) : (
+                          <>
+                            {tool.icon}
+                            {tool.name}
+                          </>
+                        )}
                       </span>
                     ))}
                   </div>
