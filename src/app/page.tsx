@@ -14,7 +14,7 @@ export default function Home() {
       company: "Rapitecnic S.L.",
       description: [
         "Participación en el desarrollo de una aplicación web interna para la empresa, enfocándome en la implementación de estilos y módulos funcionales.",
-        "Desarrollo utilizando React, Tailwind CSS, Node.js con Express y SQL Server.",
+        // "Desarrollo utilizando React, Tailwind CSS, Node.js con Express y SQL Server.",
         "Gestión y seguimiento del proyecto mediante Trello, facilitando la organización y priorización de tareas.",
         "Trabajo colaborativo en equipo bajo metodologías ágiles, incluyendo revisiones de código y comunicación constante.",
       ],
@@ -74,12 +74,22 @@ export default function Home() {
     },
     {
       category: "FRONTEND",
+      title: "Vimeo Copy",
+      description:
+        "Clon estático del sitio web de vimeo, en el que se integran animaciones, transiciones y diseño responsivo. El proyecto se realizó con HTML, CSS, SASS y Bootstrap.",
+      repoUrl: "https://github.com/espinoza0/pr3-vimeo",
+      demoUrl: "https://pr3-vimeo.onrender.com/",
+      tools: [icons.HTML, icons.BOOTSTRAP, "SASS", "Render"],
+      image: "/images/projects/vimeo.webp",
+    },
+    {
+      category: "FRONTEND",
       title: "Portafolio Personal",
       description:
         "Mi portafolio personal donde muestro mis proyectos y habilidades.",
       repoUrl: "https://github.com/espinoza0/portafolio",
       demoUrl: "https://portafolio-usuario.vercel.app",
-      tools: [icons.React, icons.Tailwind, 'Shadcn UI', icons.VERCEL],
+      tools: [icons.React, icons.Tailwind, "Shadcn UI", icons.VERCEL],
       image:
         "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2674&auto=format&fit=crop",
     },
@@ -95,7 +105,7 @@ export default function Home() {
       >
         <h2 className="text-4xl mt-5">Experiencia</h2>
         <div className="my-5 mx-auto">
-          <ol className="relative border-s border-gray-200 dark:border-gray-700 text-left">
+          <ol className="relative border-s border-gray-200 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
             {experiences.map((exp, index) => (
               <li key={index} className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -110,6 +120,13 @@ export default function Home() {
                     </span>
                   </h3>
                   <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside space-y-1">
+                    <li>
+                      Desarrollo utilizando{" "}
+                      <span className="underline">React</span>,{" "}
+                      <span className="underline">Tailwind CSS</span>,{" "}
+                      <span className="underline">Node.js con Express</span> y{" "}
+                      <span className="underline">SQL Server</span>.
+                    </li>
                     {exp.description.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
@@ -123,7 +140,7 @@ export default function Home() {
       {/* Proyectos */}
       <section
         id="proyectos"
-        className="text-white my-20 max-w-5xl mx-auto text-center"
+        className="text-white my-20 max-w-5xl mx-auto text-center pt-12"
       >
         <h2 className="text-4xl mb-10">Proyectos</h2>
         <div className="my-5">
@@ -131,7 +148,7 @@ export default function Home() {
             {proyectos.map((project, index) => (
               <div
                 key={index}
-                className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center p-5 rounded bg-black/20 isolate shadow-lg ring-1 ring-black/5"
+                className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center p-5 rounded-md bg-black/30 isolate shadow-lg ring-1 ring-black/5"
               >
                 <div className="text-left space-y-4">
                   <h2 className="text-sm text-blue-400/80">
@@ -168,7 +185,7 @@ export default function Home() {
                   </div>
 
                   {/* tools */}
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
                     {project.tools.map((tool, i) => (
                       <span
                         key={i}

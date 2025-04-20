@@ -20,7 +20,7 @@ export default function Hero() {
               <Download />
             </Button>
           </a>
-          <a href="" target="" rel="noopener noreferrer">
+          <a href="https://github.com/espinoza0" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" className="min-w-[120px]">
               Github
               <Image
