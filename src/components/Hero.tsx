@@ -6,6 +6,22 @@ export default function Hero() {
   return (
     <section className="flex items-center justify-center mt-15">
       <div className="max-w-4xl text-center space-y-6">
+        {/* <div className="rounded-md border mx-auto w-fit px-2">Disponible</div> */}
+        <a
+          href="https://linkedin.com/in/midudev"
+          target="_blank"
+          rel="noopener"
+          className="flex items-center transition md:justify-center md:hover:scale-105"
+        >
+          <div className="flex items-center ">
+            <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
+              <div className="inline-flex items-center justify-center w-full px-3 py-1 text-sm  rounded-full cursor-pointerbg-gray-800 text-black/80 backdrop-blur-3xl whitespace-nowrap">
+                Disponible para trabajar
+              </div>
+            </span>
+          </div>
+        </a>
         <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
           Hola, soy Gabriel
         </h1>
@@ -20,7 +36,11 @@ export default function Hero() {
               <Download />
             </Button>
           </a>
-          <a href="https://github.com/espinoza0" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/espinoza0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="outline" className="min-w-[120px]">
               Github
               <Image
