@@ -1,3 +1,4 @@
+import { Briefcase, Code2, Home, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -8,30 +9,34 @@ export default function Header() {
           href="#"
           className="text-sm font-medium transition-colors hover:text-slate-500"
         >
-          Home
+          <span className="hidden md:inline">Home</span>
+          {<Home className="md:hidden" />}
         </a>
         <Link
           href="#proyectos"
           className="text-sm font-medium transition-colors hover:text-slate-500"
           prefetch={false}
         >
-          Proyectos
+          <span className="hidden md:inline">Proyectos</span>
+          <Code2 className="md:hidden" />
         </Link>
         <Link
           href="#experiencia"
           className="text-sm font-medium transition-colors hover:text-slate-500"
           prefetch={false}
         >
-          Experiencia
+          <span className="hidden md:inline">Experiencia</span>
+          <Briefcase className="md:hidden" />
         </Link>
         <Link
           href="/"
           className="text-sm font-medium transition-colors hover:text-slate-500"
           prefetch={false}
         >
-          Contacto
+          <span className="hidden md:inline">Contacto</span>
+          <Mail className="md:hidden" />
         </Link>
       </nav>
     </div>
-  )
+  );
 }
