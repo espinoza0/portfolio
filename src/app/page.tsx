@@ -237,11 +237,11 @@ export default function Home() {
           onValueChange={setSelectedTab}
         >
           <TabsList className="w-full bg-slate-900/50">
-            <TabsTrigger value="all" className="text-white data-[state=active]:bg-slate-800">Todo</TabsTrigger>
-            <TabsTrigger value="Frontend" className="text-white data-[state=active]:bg-slate-800">Frontend</TabsTrigger>
-            <TabsTrigger value="Backend" className="text-white data-[state=active]:bg-slate-800">Backend</TabsTrigger>
-            <TabsTrigger value="Deploy" className="text-white data-[state=active]:bg-slate-800">Despliegue</TabsTrigger>
-            <TabsTrigger value="Other" className="text-white data-[state=active]:bg-slate-800">Otros</TabsTrigger>
+            <TabsTrigger value="all" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Todo</TabsTrigger>
+            <TabsTrigger value="Frontend" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Frontend</TabsTrigger>
+            <TabsTrigger value="Backend" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Backend</TabsTrigger>
+            <TabsTrigger value="Deploy" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Despliegue</TabsTrigger>
+            <TabsTrigger value="Other" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Otros</TabsTrigger>
           </TabsList>
         </Tabs>
 

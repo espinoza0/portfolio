@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="rounded-xl px-3 py-2 shadow-xl w-fit mt-5 mb-10 bg-slate-900 z-20 text-white fixed">
+    <div className="rounded-xl px-3 py-2 shadow-xl w-fit mt-5 mb-10 bg-slate-800/80 z-20 text-white fixed">
       <nav className="items-center gap-6 flex">
         <a
           href="#"
