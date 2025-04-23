@@ -5,8 +5,12 @@ import { cn } from "@/lib/utils";
 import { Link } from "lucide-react";
 import Image from "next/image";
 import icons from "@/components/icons/icons";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
 
 export default function Home() {
+  const [selectedTab, setSelectedTab] = useState("all");
+
   const experiences = [
     {
       date: "Octubre 2024 - Febrero 2025",
@@ -69,7 +73,7 @@ export default function Home() {
         "Aplicación web que permite buscar y descubrir películas y series de televisión. Usa la API de The Movie Database (TMDB) para la obtención de información del tíulo; actores, tráiler, dónde ver, etc.",
       repoUrl: "https://github.com/espinoza0/Movie-TV-Discover-App",
       demoUrl: "https://movie-discover.onrender.com/",
-      tools: [icons.React, icons.Tailwind, "Render", "API", "Material UI"],
+      tools: [icons.React, icons.Tailwind, icons.Render, "API", "Material UI"],
       image: "/images/projects/movie-tv-discover.webp",
     },
     {
@@ -79,7 +83,7 @@ export default function Home() {
         "Clon estático del sitio web de vimeo, en el que se integran animaciones, transiciones y diseño responsivo. El proyecto se realizó con HTML, CSS, SASS y Bootstrap.",
       repoUrl: "https://github.com/espinoza0/pr3-vimeo",
       demoUrl: "https://pr3-vimeo.onrender.com/",
-      tools: [icons.HTML, icons.BOOTSTRAP, "SASS", "Render"],
+      tools: [icons.HTML, icons.BOOTSTRAP, "SASS", icons.Render],
       image: "/images/projects/vimeo.webp",
     },
     {
@@ -219,6 +223,42 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      {/* Tools */}
+      <section
+        id="tools"
+        className="text-white my-20 max-w-5xl mx-auto text-center pt-12"
+      >
+        <h2 className="text-4xl">Tecnologías</h2>
+        <Tabs
+          defaultValue="all"
+          className="w-full my-5"
+          onValueChange={setSelectedTab}
+        >
+          <TabsList className="w-full bg-slate-900/50">
+            <TabsTrigger value="all" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Todo</TabsTrigger>
+            <TabsTrigger value="Frontend" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Frontend</TabsTrigger>
+            <TabsTrigger value="Backend" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Backend</TabsTrigger>
+            <TabsTrigger value="Deploy" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Despliegue</TabsTrigger>
+            <TabsTrigger value="Other" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Otros</TabsTrigger>
+          </TabsList>
+        </Tabs>
+
+        <div className="flex items-center flex-wrap gap-2 mt-10">
+          {Object.values(icons)
+            .filter((item) =>
+              selectedTab === "all" ? true : item.category === selectedTab
+            )
+            .map((item, index) => (
+              <span
+                key={index}
+                className="rounded-xl px-3 py-1 bg-slate-200/5 w-fit flex items-center gap-2 text-lg"
+              >
+                {item.icon}
+                {item.name}
+              </span>
+            ))}
         </div>
       </section>
     </>
