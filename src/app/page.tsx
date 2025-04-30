@@ -238,7 +238,7 @@ export default function Home() {
                 <div
                   className={cn(
                     "w-full rounded-md overflow-hidden h-64 relative shadow-white/10 shadow-2xl",
-                    index % 2 === 0 && "order-first"
+                    index % 2 === 0 && "md:order-first"
                   )}
                 >
                   <Image
