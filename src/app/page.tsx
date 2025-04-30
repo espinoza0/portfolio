@@ -193,15 +193,19 @@ export default function Home() {
                     {project.tools.map((tool, i) => (
                       <span
                         key={i}
-                        className="rounded-xl px-3 bg-slate-900/50 text-sm flex items-center gap-1"
+                        className={cn(
+                          "rounded-full px-3 py-[1.5px] bg-slate-900/50 text-sm flex items-center gap-1 relative overflow-hidden",
+                          tool.className && tool.className
+                        )}
                       >
+                        <span className="absolute left-0 top-0 w-full h-full bg-black/75 pointer-events-none" />
                         {typeof tool === "string" ? (
-                          <span>{tool}</span>
+                          <span className="relative z-10">{tool}</span>
                         ) : (
-                          <>
+                          <span className="relative z-10 flex items-center gap-2 text-white">
                             {tool.icon}
                             {tool.name}
-                          </>
+                          </span>
                         )}
                       </span>
                     ))}
@@ -237,11 +241,36 @@ export default function Home() {
           onValueChange={setSelectedTab}
         >
           <TabsList className="w-full bg-slate-900/50">
-            <TabsTrigger value="all" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Todo</TabsTrigger>
-            <TabsTrigger value="Frontend" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Frontend</TabsTrigger>
-            <TabsTrigger value="Backend" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Backend</TabsTrigger>
-            <TabsTrigger value="Deploy" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Despliegue</TabsTrigger>
-            <TabsTrigger value="Other" className="text-white data-[state=active]:bg-slate-800 cursor-pointer">Otros</TabsTrigger>
+            <TabsTrigger
+              value="all"
+              className="text-white data-[state=active]:bg-slate-800 cursor-pointer"
+            >
+              Todo
+            </TabsTrigger>
+            <TabsTrigger
+              value="Frontend"
+              className="text-white data-[state=active]:bg-slate-800 cursor-pointer"
+            >
+              Frontend
+            </TabsTrigger>
+            <TabsTrigger
+              value="Backend"
+              className="text-white data-[state=active]:bg-slate-800 cursor-pointer"
+            >
+              Backend
+            </TabsTrigger>
+            <TabsTrigger
+              value="Deploy"
+              className="text-white data-[state=active]:bg-slate-800 cursor-pointer"
+            >
+              Despliegue
+            </TabsTrigger>
+            <TabsTrigger
+              value="Other"
+              className="text-white data-[state=active]:bg-slate-800 cursor-pointer"
+            >
+              Otros
+            </TabsTrigger>
           </TabsList>
         </Tabs>
 
@@ -253,10 +282,18 @@ export default function Home() {
             .map((item, index) => (
               <span
                 key={index}
-                className="rounded-xl px-3 py-1 bg-slate-200/5 w-fit flex items-center gap-2 text-lg"
+                className={cn(
+                  "rounded-full px-3 py-1 w-fit flex items-center gap-2 text-base relative overflow-hidden",
+                  item.className && item.className
+                )}
               >
-                {item.icon}
-                {item.name}
+                {/* Capa oscura */}
+                <span className="absolute left-0 top-0 w-full h-full bg-black/75 pointer-events-none" />
+
+                <span className="relative z-10 flex items-center gap-2 text-white">
+                  {item.icon}
+                  {item.name}
+                </span>
               </span>
             ))}
         </div>

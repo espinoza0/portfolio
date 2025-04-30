@@ -16,6 +16,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#E34F26] via-[#b33a1a] to-[#23272f] ",
   },
   CSS: {
     name: "CSS",
@@ -34,6 +35,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#1572B6] via-[#2062af] to-[#23272f] ",
   },
   JavaScript: {
     name: "JavaScript",
@@ -52,6 +54,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#F7DF1E] via-yellow-500 to-[#23272f]",
   },
   TypeScript: {
     name: "TypeScript",
@@ -71,6 +74,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#3178c6] via-[#225ea8] to-[#23272f]"
   },
   React: {
     name: "React JS",
@@ -89,6 +93,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#61dafb] via-cyan-600 to-[#23272f]"
   },
   Tailwind: {
     name: "Tailwind CSS",
@@ -108,6 +113,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#38bdf8] via-[#0ea5e9] to-[#23272f]"
   },
   NodeJS: {
     name: "Node.js",
@@ -126,6 +132,7 @@ const icons = {
       </svg>
     ),
     category: "Backend",
+    className: "bg-gradient-to-r from-[#3c873a] via-green-700 to-[#23272f]"
   },
   Git: {
     name: "Git",
@@ -143,7 +150,8 @@ const icons = {
         <path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path>
       </svg>
     ),
-    category: "Backend",
+    category: "Other",
+    className: "bg-gradient-to-r from-[#f34f29] via-[#b94e2c] to-[#23272f]"
   },
   Express: {
     name: "Express",
@@ -163,6 +171,7 @@ const icons = {
       </svg>
     ),
     category: "Backend",
+    className: "bg-gradient-to-r from-[#23272f] via-gray-700 to-black"
   },
   Postman: {
     name: "Postman",
@@ -182,6 +191,7 @@ const icons = {
       </svg>
     ),
     category: "Other",
+    className: "bg-gradient-to-r from-[#ff6c37] via-[#e86c28] to-[#23272f]"
   },
   MySQL: {
     name: "MySQL",
@@ -203,6 +213,7 @@ const icons = {
       </svg>
     ),
     category: "Backend",
+    className: "bg-gradient-to-r from-[#00758f] via-[#005f73] to-[#23272f]"
   },
   PHP: {
     name: "PHP",
@@ -222,6 +233,7 @@ const icons = {
       </svg>
     ),
     category: "Backend",
+    className: "bg-gradient-to-r from-[#8993be] via-[#4f5b93] to-[#23272f]"
   },
   VERCEL: {
     name: "Vercel",
@@ -241,6 +253,7 @@ const icons = {
       </svg>
     ),
     category: "Deploy",
+    className: "bg-gradient-to-r from-[#23272f] via-gray-800 to-black"
   },
   SUPABSE: {
     name: "Supabase",
@@ -268,6 +281,7 @@ const icons = {
       </svg>
     ),
     category: "Backend",
+    className: "bg-gradient-to-r from-[#3ecf8e] via-[#0ea47a] to-[#23272f]"
   },
   BOOTSTRAP: {
     name: "Bootstrap",
@@ -289,6 +303,7 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
+    className: "bg-gradient-to-r from-[#7952b3] via-[#563d7c] to-[#23272f]"
   },
   Netlify: {
     name: "Netlify",
@@ -308,17 +323,20 @@ const icons = {
       </svg>
     ),
     category: "Deploy",
+    className: "bg-gradient-to-r from-[#00c7b7] via-[#00a79d] to-[#23272f]"
   },
 
   Render: {
     name: "Render",
     icon: null,
-    category: "Deploy"
+    category: "Deploy",
+    className: "bg-gradient-to-r from-[#0099ff] via-[#005fa3] to-[#23272f]"
   },
   Railway: {
     name: "Railway",
     icon: null,
-    category: "Deploy"
+    category: "Deploy",
+    className: "bg-gradient-to-r from-[#5a32ff] via-[#3b1e8a] to-[#23272f]"
   },
 };
 

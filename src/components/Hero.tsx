@@ -30,7 +30,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-wrap md:justify-center gap-4 mt-6 ">
           <a href="" target="" rel="noopener noreferrer">
-            <Button variant="secondary" className="min-w-[120px]">
+            <Button variant="default" className="min-w-[120px] rounded-xl">
               CV
               <Download />
             </Button>
@@ -40,7 +40,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" className="min-w-[120px]">
+            <Button variant="outline" className="min-w-[120px] rounded-xl">
               Github
               <Image
                 width={20}
@@ -52,7 +52,7 @@ export default function Hero() {
             </Button>
           </a>
           <a href="mailto:gabriel.bascope005@gmail.com">
-            <Button variant="default" className="min-w-[120px]">
+            <Button variant="default" className="min-w-[120px] rounded-xl">
               Contacto
               <Mail />
             </Button>
