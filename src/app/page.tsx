@@ -8,6 +8,28 @@ import icons from "@/components/icons/icons";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 
+// Tipos para los iconos
+type ToolIcon = {
+  name: string;
+  icon: React.ReactNode | null;
+  category: string;
+  className: string;
+};
+
+// El tipo para cada herramienta puede ser un ToolIcon o un string
+type Tool = ToolIcon | string;
+
+// Tipo para cada proyecto
+type Proyecto = {
+  category: string;
+  title: string;
+  description: string;
+  repoUrl: string;
+  demoUrl: string;
+  tools: Tool[];
+  image: string;
+};
+
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("all");
 
@@ -25,7 +47,7 @@ export default function Home() {
     },
   ];
 
-  const proyectos = [
+  const proyectos: Proyecto[] = [
     {
       category: "FRONTEND",
       title: "Tip Calculator App",
@@ -195,7 +217,9 @@ export default function Home() {
                         key={i}
                         className={cn(
                           "rounded-full px-3 py-[1.5px] bg-slate-900/50 text-sm flex items-center gap-1 relative overflow-hidden",
-                          tool.className && tool.className
+                          typeof tool === "object" && "className" in tool
+                            ? tool.className
+                            : ""
                         )}
                       >
                         <span className="absolute left-0 top-0 w-full h-full bg-black/75 pointer-events-none" />
