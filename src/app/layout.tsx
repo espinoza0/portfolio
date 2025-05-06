@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={onest.variable}>
-      <body className={`antialiased min-h-screen bg-slate-950 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)] bg-no-repeat bg-cover`}
+      <body suppressHydrationWarning className={`antialiased min-h-screen bg-slate-950 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)] bg-no-repeat bg-cover`}
       >
         <div className="max-w-[70rem] mx-auto p-4">
           <header className="flex items-center justify-center py-10">
