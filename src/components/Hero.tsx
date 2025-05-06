@@ -1,11 +1,26 @@
+"use client";
+
+import { useRef } from "react";
+import { cn } from "@/lib/utils";
 import { Download, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { useIsVisible } from "../../public/hooks/useIsVisible";
 
 export default function Hero() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIsVisible(ref);
+
   return (
     <section className="flex items-center justify-center mt-15">
-      <div className="max-w-4xl text-left md:text-center space-y-6">
+      <div
+        ref={ref}
+        className={cn(
+          "max-w-4xl text-left md:text-center space-y-6",
+          "transition duration-700 ease-in",
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        )}
+      >
         <a
           href="https://linkedin.com/in/gabriel-bascope-espinoza-1a970235a"
           target="_blank"

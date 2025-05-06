@@ -1,5 +1,7 @@
 "use client";
 
+import { ExperienceItem } from "../ExperienceItem";
+
 const experiences = [
   {
     date: "Octubre 2024 - Febrero 2025",
@@ -24,32 +26,7 @@ export default function Experience() {
       <div className="my-5 mx-auto">
         <ol className="relative border-s border-gray-200 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
           {experiences.map((exp, index) => (
-            <li key={index} className="mb-10 ms-4">
-              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-              <div className="mx-5">
-                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  {exp.date}
-                </time>
-                <h3 className="text-lg font-semibold text-white dark:text-white">
-                  {exp.title}{" "}
-                  <span className="block text-sm font-normal text-gray-400 dark:text-gray-500">
-                    {exp.company}
-                  </span>
-                </h3>
-                <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside space-y-1">
-                  <li>
-                    Desarrollo utilizando{" "}
-                    <span className="underline">React</span>,{" "}
-                    <span className="underline">Tailwind CSS</span>,{" "}
-                    <span className="underline">Node.js con Express</span> y{" "}
-                    <span className="underline">SQL Server</span>.
-                  </li>
-                  {exp.description.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </li>
+            <ExperienceItem key={index} exp={exp} />
           ))}
         </ol>
       </div>
