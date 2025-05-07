@@ -23,7 +23,7 @@ export default function Tools() {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         )}
       >
-        <h2 className="text-4xl">Tecnologías</h2>
+        <h2 className="text-4xl bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">Tecnologías</h2>
         <Tabs
           defaultValue="all"
           className="w-full my-5"

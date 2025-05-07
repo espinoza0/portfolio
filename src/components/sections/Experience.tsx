@@ -22,7 +22,11 @@ export default function Experience() {
       id="experiencia"
       className="text-white text-center my-20 max-w-4xl mx-auto pt-10"
     >
-      <h2 className="text-4xl mt-5">Experiencia</h2>
+      <h2
+        className="text-4xl mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent"
+      >
+        Experiencia
+      </h2>
       <div className="my-5 mx-auto">
         <ol className="relative border-s border-gray-200 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
           {experiences.map((exp, index) => (
