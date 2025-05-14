@@ -37,25 +37,31 @@ export default function ProjectCard({
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2"
+            className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
           >
             <Image
               width={20}
               height={20}
               src="/images/github-mark.png"
-              alt="github"
+              alt="Repositorio en GitHub"
               className="object-contain"
             />
             Código
+            <span className="sr-only">
+              (se abre el repositorio en una pestaña nueva)
+            </span>
           </a>
           <a
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2"
+            className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
           >
-            <Link size={17} />
+            <Link size={17} aria-hidden="true" />
             Demo
+            <span className="sr-only">
+              (se abre la demo en una pestaña nueva)
+            </span>
           </a>
         </div>
 
