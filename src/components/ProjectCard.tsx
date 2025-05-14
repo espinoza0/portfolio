@@ -101,6 +101,7 @@ export default function ProjectCard({
           alt="proyecto"
           fill
           className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
     </div>

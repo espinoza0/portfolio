@@ -25,7 +25,7 @@ export default function Hero() {
           href="https://linkedin.com/in/gabriel-bascope-espinoza-1a970235a"
           target="_blank"
           rel="noopener"
-          className="flex items-center transition md:justify-center md:hover:scale-105"
+          className="flex items-center transition md:justify-center md:hover:scale-105 w-fit md:mx-auto"
         >
           <div className="flex items-center">
             <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
@@ -43,13 +43,13 @@ export default function Hero() {
           Desarrolador web junior con gran interés en el desarrollo de una idea
           a un producto real. Aún estudiando y explorando nuevas tecnologías.
         </p>
-        <div className="flex flex-wrap md:justify-center gap-4 mt-6 ">
+        <div className="flex items-center flex-wrap md:justify-center gap-3 mt-6 ">
           <Button
             asChild
             variant="default"
             className="min-w-[120px] rounded-xl"
           >
-            <a href="" download aria-label="Descargar CV">
+            <a href="" download aria-label="Descargar Currículum Vitae">
               CV
               <Download aria-hidden="true" />
             </a>
@@ -63,7 +63,7 @@ export default function Hero() {
               href="https://github.com/espinoza0"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Ir al perfil de Github"
+              aria-label="Ir al perfil de Github (se abre en una pestaña nueva)"
             >
               Github
               <Image
@@ -83,7 +83,7 @@ export default function Hero() {
           >
             <a
               href="mailto:gabriel.bascope005@gmail.com"
-              aria-label="Enviar correo a Gabriel"
+              aria-label="Enviar correo a Gabriel (se abre una aplicación de correo)"
             >
               Contacto
               <Mail aria-hidden="true" />

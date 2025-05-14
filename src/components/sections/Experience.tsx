@@ -18,7 +18,7 @@ const experiences = [
       icons.React,
       icons.Tailwind,
       icons.NodeJS,
-      icons.MySQL,
+      "SQL Server",
       icons.Express,
     ],
   },
@@ -28,9 +28,9 @@ export default function Experience() {
   return (
     <section
       id="experiencia"
-      className="text-white text-center my-20 max-w-4xl mx-auto pt-10"
+      className="text-white text-center my-20 max-w-3xl mx-auto pt-10"
     >
-      <h2 className="text-4xl mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
+      <h2 className="text-4xl text-left md:text-center mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
         Experiencia
       </h2>
       <div className="my-5 mx-auto">
