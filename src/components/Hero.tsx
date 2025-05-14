@@ -44,34 +44,51 @@ export default function Hero() {
           a un producto real. Aún estudiando y explorando nuevas tecnologías.
         </p>
         <div className="flex flex-wrap md:justify-center gap-4 mt-6 ">
-          <a href="" target="" rel="noopener noreferrer">
-            <Button variant="default" className="min-w-[120px] rounded-xl">
-              CV
-              <Download />
-            </Button>
-          </a>
-          <a
-            href="https://github.com/espinoza0"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Button
+            asChild
+            variant="default"
+            className="min-w-[120px] rounded-xl"
           >
-            <Button variant="outline" className="min-w-[120px] rounded-xl">
+            <a href="" download aria-label="Descargar CV">
+              CV
+              <Download aria-hidden="true" />
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            className="min-w-[120px] rounded-xl"
+          >
+            <a
+              href="https://github.com/espinoza0"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ir al perfil de Github"
+            >
               Github
               <Image
                 width={20}
                 height={20}
                 src="/images/github-mark.png"
-                alt="github"
+                alt="Logo de github"
+                aria-hidden="true"
                 className="object-contain"
               />
-            </Button>
-          </a>
-          <a href="mailto:gabriel.bascope005@gmail.com">
-            <Button variant="default" className="min-w-[120px] rounded-xl">
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="default"
+            className="min-w-[120px] rounded-xl"
+          >
+            <a
+              href="mailto:gabriel.bascope005@gmail.com"
+              aria-label="Enviar correo a Gabriel"
+            >
               Contacto
-              <Mail />
-            </Button>
-          </a>
+              <Mail aria-hidden="true" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>

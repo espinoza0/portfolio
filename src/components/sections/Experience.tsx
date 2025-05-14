@@ -1,6 +1,7 @@
 "use client";
 
 import { ExperienceItem } from "../ExperienceItem";
+import icons from "../icons/icons";
 
 const experiences = [
   {
@@ -9,9 +10,16 @@ const experiences = [
     company: "Rapitecnic S.L.",
     description: [
       "Participación en el desarrollo de una aplicación web interna para la empresa, enfocándome en la implementación de estilos y módulos funcionales.",
-      // "Desarrollo utilizando React, Tailwind CSS, Node.js con Express y SQL Server.",
+      "Desarrollo utilizando React, Tailwind CSS, Node.js con Express y SQL Server.",
       "Gestión y seguimiento del proyecto mediante Trello, facilitando la organización y priorización de tareas.",
       "Trabajo colaborativo en equipo bajo metodologías ágiles, incluyendo revisiones de código y comunicación constante.",
+    ],
+    tools: [
+      icons.React,
+      icons.Tailwind,
+      icons.NodeJS,
+      icons.MySQL,
+      icons.Express,
     ],
   },
 ];
@@ -22,9 +30,7 @@ export default function Experience() {
       id="experiencia"
       className="text-white text-center my-20 max-w-4xl mx-auto pt-10"
     >
-      <h2
-        className="text-4xl mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent"
-      >
+      <h2 className="text-4xl mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
         Experiencia
       </h2>
       <div className="my-5 mx-auto">

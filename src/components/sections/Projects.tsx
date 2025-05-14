@@ -2,28 +2,7 @@
 
 import icons from "@/components/icons/icons";
 import ProjectCard from "../ProjectCard";
-
-// Tipos para los iconos
-type ToolIcon = {
-  name: string;
-  icon: React.ReactNode | null;
-  category: string;
-  className: string;
-};
-
-// El tipo para cada herramienta puede ser un ToolIcon o un string
-type Tool = ToolIcon | string;
-
-// Tipo para cada proyecto
-type Proyecto = {
-  category: string;
-  title: string;
-  description: string;
-  repoUrl: string;
-  demoUrl: string;
-  tools: Tool[];
-  image: string;
-};
+import { Proyecto } from "@/types/global.types";
 
 const proyectos: Proyecto[] = [
   {
@@ -105,13 +84,17 @@ export default function Projects() {
       id="proyectos"
       className="text-white my-20 max-w-5xl mx-auto text-center pt-12"
     >
-      <h2 className="text-4xl mb-10 bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent
-">Proyectos</h2>
+      <h2
+        className="text-4xl mb-10 bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent
+"
+      >
+        Proyectos
+      </h2>
       <div className="my-5">
         <div className="flex flex-col gap-13">
-          {proyectos.map((project, index) => 
-            <ProjectCard key={index} project={project} index={index}/>
-          )}
+          {proyectos.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} />
+          ))}
         </div>
       </div>
     </section>

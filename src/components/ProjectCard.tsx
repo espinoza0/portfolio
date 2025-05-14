@@ -5,23 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Link } from "lucide-react";
 import { useIsVisible } from "../../public/hooks/useIsVisible";
-
-type ToolIcon = {
-  name: string;
-  icon: React.ReactNode | null;
-  category: string;
-  className: string;
-};
-type Tool = ToolIcon | string;
-type Proyecto = {
-  category: string;
-  title: string;
-  description: string;
-  repoUrl: string;
-  demoUrl: string;
-  tools: Tool[];
-  image: string;
-};
+import { Proyecto } from "@/types/global.types";
 
 export default function ProjectCard({
   project,

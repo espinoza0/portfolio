@@ -1,15 +1,7 @@
 import { useRef } from "react";
 import { useIsVisible } from "../../public/hooks/useIsVisible";
 import { cn } from "@/lib/utils";
-
-type ExperienceItemProps = {
-  exp: {
-    date: string;
-    title: string;
-    company: string;
-    description: string[];
-  };
-};
+import { ExperienceItemProps } from "@/types/global.types";
 
 export function ExperienceItem({ exp }: ExperienceItemProps) {
   const ref = useRef<HTMLLIElement>(null);
@@ -35,17 +27,34 @@ export function ExperienceItem({ exp }: ExperienceItemProps) {
             {exp.company}
           </span>
         </h3>
-        <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside space-y-1">
-          <li>
-            Desarrollo utilizando <span className="underline">React</span>,{" "}
-            <span className="underline">Tailwind CSS</span>,{" "}
-            <span className="underline">Node.js con Express</span> y{" "}
-            <span className="underline">SQL Server</span>.
-          </li>
+        <ul className="mt-4 mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside space-y-1">
           {exp.description.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </ul>
+        <div className="flex items-center gap-2 flex-wrap">
+          {exp.tools.map((tool, i) => (
+            <span
+              key={i}
+              className={cn(
+                "rounded-full px-3 py-[1.5px] bg-slate-900/50 text-sm flex items-center gap-1 relative overflow-hidden",
+                typeof tool === "object" && "className" in tool
+                  ? tool.className
+                  : ""
+              )}
+            >
+              <span className="absolute left-0 top-0 w-full h-full bg-black/75 pointer-events-none" />
+              {typeof tool === "string" ? (
+                <span className="relative z-10">{tool}</span>
+              ) : (
+                <span className="relative z-10 flex items-center gap-2 text-white">
+                  {tool.icon}
+                  {tool.name}
+                </span>
+              )}
+            </span>
+          ))}
+        </div>
       </div>
     </li>
   );
