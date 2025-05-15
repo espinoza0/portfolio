@@ -4,7 +4,7 @@ import icons from "@/components/icons/icons";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 import { useState, useRef } from "react";
-import { useIsVisible } from "../../../public/hooks/useIsVisible";
+import { useIsVisible } from "../../hooks/useIsVisible";
 
 export default function Tools() {
   const [selectedTab, setSelectedTab] = useState("all");

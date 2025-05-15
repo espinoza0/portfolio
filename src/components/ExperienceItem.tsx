@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useIsVisible } from "../../public/hooks/useIsVisible";
+import { useIsVisible } from "../hooks/useIsVisible";
 import { cn } from "@/lib/utils";
 import { ExperienceItemProps } from "@/types/global.types";
 

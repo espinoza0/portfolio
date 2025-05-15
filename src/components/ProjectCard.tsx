@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Link } from "lucide-react";
-import { useIsVisible } from "../../public/hooks/useIsVisible";
+import { useIsVisible } from "../hooks/useIsVisible";
 import { Proyecto } from "@/types/global.types";
 
 export default function ProjectCard({

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Download, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { useIsVisible } from "../../public/hooks/useIsVisible";
+import { useIsVisible } from "../hooks/useIsVisible";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -22,7 +22,7 @@ export default function Hero() {
         )}
       >
         <a
-          href="https://linkedin.com/in/gabriel-bascope-espinoza-1a970235a"
+          href="https://linkedin.com/in/gabrielbascope"
           target="_blank"
           rel="noopener"
           className="flex items-center transition md:justify-center md:hover:scale-105 w-fit md:mx-auto"
@@ -49,7 +49,7 @@ export default function Hero() {
             variant="default"
             className="min-w-[120px] rounded-xl"
           >
-            <a href="" download aria-label="Descargar Currículum Vitae">
+            <a href="/cv-gabrielBascope.pdf" download aria-label="Descargar Currículum Vitae">
               CV
               <Download aria-hidden="true" />
             </a>

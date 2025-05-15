@@ -31,7 +31,7 @@ export default function Footer() {
 
         {/* LinkedIn */}
         <a
-          href="https://linkedin.com/in/gabriel-bascope-espinoza-1a970235a"
+          href="https://linkedin.com/in/gabrielbascope"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visitar el perfil de LinkedIn de Gabriel Bascope (se abre en una pestaña nueva)"
