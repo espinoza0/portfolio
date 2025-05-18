@@ -6,7 +6,7 @@ import icons from "../icons/icons";
 const experiences = [
   {
     date: "Octubre 2024 - Febrero 2025",
-    title: "Prácticas de Desarrollo Web",
+    title: "Desarrollador Web en Prácticas",
     company: "Rapitecnic S.L.",
     description: [
       "Participación en el desarrollo de una aplicación web interna para la empresa, enfocándome en la implementación de estilos y módulos funcionales.",
@@ -34,7 +34,7 @@ export default function Experience() {
         Experiencia
       </h2>
       <div className="my-5 mx-auto">
-        <ol className="relative border-s border-gray-200 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
+        <ol className="relative border-s border-gray-200/30 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
           {experiences.map((exp, index) => (
             <ExperienceItem key={index} exp={exp} />
           ))}

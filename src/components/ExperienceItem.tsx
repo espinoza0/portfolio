@@ -16,18 +16,18 @@ export function ExperienceItem({ exp }: ExperienceItemProps) {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       )}
     >
-      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+      <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 dark:border-gray-900 dark:bg-gray-700"></div>
       <div className="ml-5">
-        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+        <time className="mb-1 text-sm font-normal leading-none text-gray-300 dark:text-gray-500">
           {exp.date}
         </time>
-        <h3 className="text-lg font-semibold text-white dark:text-white">
+        <h3 className="text-lg font-semibold text-blue-400/80 dark:text-white">
           {exp.title}{" "}
-          <span className="block text-sm font-normal text-gray-400 dark:text-gray-500">
+          <span className="block text-sm font-normal text-gray-300 dark:text-gray-500">
             {exp.company}
           </span>
         </h3>
-        <ul className="mt-4 mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside space-y-1">
+        <ul className="mt-4 mb-4 text-base font-normal text-gray-400 dark:text-gray-400 list-disc list-inside space-y-1">
           {exp.description.map((item, i) => (
             <li key={i}>{item}</li>
           ))}

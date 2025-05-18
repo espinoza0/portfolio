@@ -28,16 +28,16 @@ export default function ProjectCard({
       )}
     >
       <div className="text-left space-y-4">
-        <h2 className="text-sm text-blue-400/80">{project.category}</h2>
+        <h4 className="text-sm text-blue-400/80">{project.category}</h4>
         <h3 className="text-xl">{project.title}</h3>
-        <p className="text-gray-300">{project.description}</p>
+        <p className="text-gray-400">{project.description}</p>
 
         <div className="flex gap-2 items-center">
           <a
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
+            className="p-2 rounded-md border border-gray-700 bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
           >
             <Image
               width={20}
@@ -55,7 +55,7 @@ export default function ProjectCard({
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-md bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
+            className="p-2 rounded-md border border-gray-700 bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
           >
             <Link size={17} aria-hidden="true" />
             Demo

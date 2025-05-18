@@ -29,8 +29,8 @@ export default function Hero() {
         >
           <div className="flex items-center">
             <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
-              <div className="inline-flex items-center justify-center w-full px-3 py-1 text-sm  rounded-full cursor-pointerbg-gray-800 text-black/80 backdrop-blur-3xl whitespace-nowrap">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,rgba(0,0,0,0.4)_40%,#3b82f6_100%)]"></span>
+              <div className="inline-flex items-center justify-center w-full px-3 py-1 text-sm rounded-full cursor-pointer bg-gray-800 text-white/80 backdrop-blur-3xl whitespace-nowrap">
                 Disponible para trabajar
               </div>
             </span>
@@ -40,16 +40,20 @@ export default function Hero() {
           Hola, soy Gabriel
         </h1>
         <p className="text-lg md:text-xl text-gray-300">
-          Desarrolador web junior con gran interés en el desarrollo de una idea
+          Desarrollador web junior con gran interés en el desarrollo de una idea
           a un producto real. Aún estudiando y explorando nuevas tecnologías.
         </p>
         <div className="flex items-center flex-wrap md:justify-center gap-3 mt-6 ">
           <Button
             asChild
-            variant="default"
+            variant="custom"
             className="min-w-[120px] rounded-xl"
           >
-            <a href="/cv-gabrielBascope.pdf" download aria-label="Descargar Currículum Vitae">
+            <a
+              href="/cv-gabrielBascope.pdf"
+              download
+              aria-label="Descargar Currículum Vitae"
+            >
               CV
               <Download aria-hidden="true" />
             </a>
@@ -78,7 +82,7 @@ export default function Hero() {
           </Button>
           <Button
             asChild
-            variant="default"
+            variant="custom"
             className="min-w-[120px] rounded-xl"
           >
             <a
