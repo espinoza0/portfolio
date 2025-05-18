@@ -37,7 +37,7 @@ export default function ProjectCard({
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-md border border-gray-700 bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
+            className="p-2 rounded-md border border-gray-800 bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
           >
             <Image
               width={20}
@@ -55,7 +55,7 @@ export default function ProjectCard({
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-md border border-gray-700 bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
+            className="p-2 rounded-md border border-gray-800 bg-slate-900/50 flex items-center gap-2 focus:ring focus:ring-primary"
           >
             <Link size={17} aria-hidden="true" />
             Demo

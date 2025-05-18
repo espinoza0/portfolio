@@ -82,7 +82,7 @@ export default function Projects() {
   return (
     <section
       id="proyectos"
-      className="text-white my-20 max-w-5xl mx-auto text-center pt-12"
+      className="text-white my-20 max-w-5xl mx-auto text-center pt-12 scroll-mt-7"
     >
       <h2 className="text-4xl mb-10 text-left md:text-center bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
         Proyectos
