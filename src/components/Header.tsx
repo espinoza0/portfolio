@@ -42,10 +42,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  console.log(activeSection);
 
   return (
-    <header className="rounded-xl px-3 py-2 shadow-xl w-fit mt-5 mb-10 bg-slate-800 z-20 text-white fixed">
+    <div className="rounded-xl px-3 py-2 shadow-xl w-fit mt-5 mb-10 bg-slate-800 z-20 text-white fixed">
       <nav
         className="items-center gap-6 flex"
         aria-label="Navegación principal"
@@ -75,6 +74,6 @@ export default function Header() {
           <Mail aria-hidden="true" />
         </a>
       </nav>
-    </header>
+    </div>
   );
 }

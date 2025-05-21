@@ -28,8 +28,8 @@ export default function ProjectCard({
       )}
     >
       <div className="text-left space-y-4">
-        <h4 className="text-sm text-blue-400/80">{project.category}</h4>
-        <h3 className="text-xl">{project.title}</h3>
+        <span className="text-sm text-blue-400/80">{project.category}</span>
+        <h3 className="text-xl mt-1">{project.title}</h3>
         <p className="text-gray-400">{project.description}</p>
 
         <div className="flex gap-2 items-center">
@@ -98,7 +98,7 @@ export default function ProjectCard({
       >
         <Image
           src={project.image}
-          alt="proyecto"
+          alt={`Imagen del proyecto ${project.title}`}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 50vw"

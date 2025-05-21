@@ -3,6 +3,7 @@ const icons = {
     name: "HTML",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
@@ -22,6 +23,7 @@ const icons = {
     name: "CSS",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
@@ -41,6 +43,7 @@ const icons = {
     name: "JavaScript",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
@@ -60,10 +63,11 @@ const icons = {
     name: "TypeScript",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
-        role="img"
+        // role="img"
         viewBox="0 0 24 24"
         style={{ color: " #3178C6" }}
         height="1em"
@@ -74,12 +78,13 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
-    className: "bg-gradient-to-r from-[#3178c6] via-[#225ea8] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#3178c6] via-[#225ea8] to-[#23272f]",
   },
   React: {
     name: "React JS",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
@@ -93,15 +98,16 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
-    className: "bg-gradient-to-r from-[#61dafb] via-cyan-600 to-[#23272f]"
+    className: "bg-gradient-to-r from-[#61dafb] via-cyan-600 to-[#23272f]",
   },
   Tailwind: {
     name: "Tailwind CSS",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
-        role="img"
+        // role="img"
         strokeWidth="0"
         viewBox="0 0 24 24"
         style={{ color: "#38B2AC" }}
@@ -113,12 +119,13 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
-    className: "bg-gradient-to-r from-[#38bdf8] via-[#0ea5e9] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#38bdf8] via-[#0ea5e9] to-[#23272f]",
   },
   NodeJS: {
     name: "Node.js",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
@@ -132,12 +139,13 @@ const icons = {
       </svg>
     ),
     category: "Backend",
-    className: "bg-gradient-to-r from-[#3c873a] via-green-700 to-[#23272f]"
+    className: "bg-gradient-to-r from-[#3c873a] via-green-700 to-[#23272f]",
   },
   Git: {
     name: "Git",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
@@ -151,16 +159,17 @@ const icons = {
       </svg>
     ),
     category: "Other",
-    className: "bg-gradient-to-r from-[#f34f29] via-[#b94e2c] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#f34f29] via-[#b94e2c] to-[#23272f]",
   },
   Express: {
     name: "Express",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
-        role="img"
+        // role="img"
         viewBox="0 0 24 24"
         style={{ color: " #C9D1D9" }}
         height="1em"
@@ -171,16 +180,17 @@ const icons = {
       </svg>
     ),
     category: "Backend",
-    className: "bg-gradient-to-r from-[#23272f] via-gray-700 to-black"
+    className: "bg-gradient-to-r from-[#23272f] via-gray-700 to-black",
   },
   Postman: {
     name: "Postman",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
-        role="img"
+        // role="img"
         viewBox="0 0 24 24"
         style={{ color: "#FF6C37" }}
         height="1em"
@@ -191,12 +201,13 @@ const icons = {
       </svg>
     ),
     category: "Other",
-    className: "bg-gradient-to-r from-[#ff6c37] via-[#e86c28] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#ff6c37] via-[#e86c28] to-[#23272f]",
   },
   MySQL: {
     name: "MySQL",
     icon: (
       <svg
+        aria-hidden="true"
         width="1.5em"
         height="1.5em"
         viewBox="0 0 24 24"
@@ -213,12 +224,13 @@ const icons = {
       </svg>
     ),
     category: "Backend",
-    className: "bg-gradient-to-r from-[#00758f] via-[#005f73] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#00758f] via-[#005f73] to-[#23272f]",
   },
   PHP: {
     name: "PHP",
     icon: (
       <svg
+        aria-hidden="true"
         width="1.5em"
         height="1.5em"
         viewBox="0 0 24 24"
@@ -233,16 +245,17 @@ const icons = {
       </svg>
     ),
     category: "Backend",
-    className: "bg-gradient-to-r from-[#8993be] via-[#4f5b93] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#8993be] via-[#4f5b93] to-[#23272f]",
   },
   VERCEL: {
     name: "Vercel",
     icon: (
       <svg
+        aria-hidden="true"
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
-        role="img"
+        // role="img"
         viewBox="0 0 24 24"
         style={{ color: "#ffffff" }}
         height="1em"
@@ -253,12 +266,13 @@ const icons = {
       </svg>
     ),
     category: "Deploy",
-    className: "bg-gradient-to-r from-[#23272f] via-gray-800 to-black"
+    className: "bg-gradient-to-r from-[#23272f] via-gray-800 to-black",
   },
   SUPABSE: {
     name: "Supabase",
     icon: (
       <svg
+        aria-hidden="true"
         width="1em"
         height="1em"
         viewBox="0 0 24 24"
@@ -281,12 +295,13 @@ const icons = {
       </svg>
     ),
     category: "Backend",
-    className: "bg-gradient-to-r from-[#3ecf8e] via-[#0ea47a] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#3ecf8e] via-[#0ea47a] to-[#23272f]",
   },
   BOOTSTRAP: {
     name: "Bootstrap",
     icon: (
       <svg
+        aria-hidden="true"
         width="1.5em"
         height="1.5em"
         viewBox="0 0 24 24"
@@ -303,12 +318,13 @@ const icons = {
       </svg>
     ),
     category: "Frontend",
-    className: "bg-gradient-to-r from-[#7952b3] via-[#563d7c] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#7952b3] via-[#563d7c] to-[#23272f]",
   },
   Netlify: {
     name: "Netlify",
     icon: (
       <svg
+        aria-hidden="true"
         width="1.5em"
         height="1.5em"
         viewBox="0 0 24 24"
@@ -323,20 +339,20 @@ const icons = {
       </svg>
     ),
     category: "Deploy",
-    className: "bg-gradient-to-r from-[#00c7b7] via-[#00a79d] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#00c7b7] via-[#00a79d] to-[#23272f]",
   },
 
   Render: {
     name: "Render",
     icon: null,
     category: "Deploy",
-    className: "bg-gradient-to-r from-[#0099ff] via-[#005fa3] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#0099ff] via-[#005fa3] to-[#23272f]",
   },
   Railway: {
     name: "Railway",
     icon: null,
     category: "Deploy",
-    className: "bg-gradient-to-r from-[#5a32ff] via-[#3b1e8a] to-[#23272f]"
+    className: "bg-gradient-to-r from-[#5a32ff] via-[#3b1e8a] to-[#23272f]",
   },
 };
 
