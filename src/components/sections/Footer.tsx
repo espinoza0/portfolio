@@ -67,6 +67,7 @@ export default function Footer() {
             strokeWidth={1.5}
             aria-hidden="true"
           />
+          <span className="sr-only">Enviar correo</span>
         </a>
       </div>
 

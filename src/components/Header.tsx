@@ -42,7 +42,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
     <div className="rounded-xl px-3 py-2 shadow-xl w-fit mt-5 mb-10 bg-slate-800 z-20 text-white fixed">
       <nav
@@ -72,6 +71,7 @@ export default function Header() {
           className="text-sm font-medium transition-colors items-center gap-2 rounded-full text-white hover:text-slate-500 flex"
         >
           <Mail aria-hidden="true" />
+          <span className="sr-only">Enviar correo</span>
         </a>
       </nav>
     </div>
