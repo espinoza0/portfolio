@@ -5,16 +5,16 @@ import ProjectCard from "../ProjectCard";
 import { Proyecto } from "@/types/global.types";
 
 const proyectos: Proyecto[] = [
-  {
-    category: "FRONTEND",
-    title: "Tip Calculator App",
-    description:
-      "Aplicación web sencilla para calcular propinas, usando HTML, CSS y Javascript.",
-    repoUrl: "https://github.com/espinoza0/tip-calculator-app",
-    demoUrl: "https://espinoza0.github.io/tip-calculator-app/",
-    tools: [icons.HTML, icons.CSS, icons.JavaScript],
-    image: "/images/projects/tip-calc.webp",
-  },
+  // {
+  //   category: "FRONTEND",
+  //   title: "Tip Calculator App",
+  //   description:
+  //     "Aplicación web sencilla para calcular propinas, usando HTML, CSS y Javascript.",
+  //   repoUrl: "https://github.com/espinoza0/tip-calculator-app",
+  //   demoUrl: "https://espinoza0.github.io/tip-calculator-app/",
+  //   tools: [icons.HTML, icons.CSS, icons.JavaScript],
+  //   image: "/images/projects/tip-calc.webp",
+  // },
   {
     category: "FRONTEND",
     title: "Job Listing Filter",
@@ -55,26 +55,47 @@ const proyectos: Proyecto[] = [
     tools: [icons.React, icons.Tailwind, icons.Render, "API", "Material UI"],
     image: "/images/projects/movie-tv-discover.webp",
   },
-  {
-    category: "FRONTEND",
-    title: "Vimeo Copy",
-    description:
-      "Clon estático del sitio web de vimeo, en el que se integran animaciones, transiciones y diseño responsivo. El proyecto se realizó con HTML, CSS, SASS y Bootstrap.",
-    repoUrl: "https://github.com/espinoza0/pr3-vimeo",
-    demoUrl: "https://pr3-vimeo.onrender.com/",
-    tools: [icons.HTML, icons.BOOTSTRAP, "SASS", icons.Render],
-    image: "/images/projects/vimeo.webp",
-  },
+  // {
+  //   category: "FRONTEND",
+  //   title: "Vimeo Copy",
+  //   description:
+  //     "Clon estático del sitio web de vimeo, en el que se integran animaciones, transiciones y diseño responsivo. El proyecto se realizó con HTML, CSS, SASS y Bootstrap.",
+  //   repoUrl: "https://github.com/espinoza0/pr3-vimeo",
+  //   demoUrl: "https://pr3-vimeo.onrender.com/",
+  //   tools: [icons.HTML, icons.BOOTSTRAP, "SASS", icons.Render],
+  //   image: "/images/projects/vimeo.webp",
+  // },
   {
     category: "FRONTEND",
     title: "Portafolio Personal",
     description:
-      "Mi portafolio personal donde muestro mis proyectos y habilidades.",
-    repoUrl: "https://github.com/espinoza0/portafolio",
-    demoUrl: "https://portafolio-usuario.vercel.app",
-    tools: [icons.React, icons.Tailwind, "Shadcn UI", icons.VERCEL],
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2674&auto=format&fit=crop",
+      "Mi portafolio personal donde muestro mis proyectos, habilidades y experiencia. Además de haber aprendido un poco más sobre accesiblidad y usabilidad, habiendo realizado informes de ambos.",
+    repoUrl: "https://github.com/espinoza0/portfolio",
+    tools: [
+      icons.NextJS,
+      icons.TypeScript,
+      icons.Tailwind,
+      "Shadcn UI",
+      icons.VERCEL,
+    ],
+    image: "/images/projects/portfolio.webp",
+  },
+  {
+    category: "FULLSTACK",
+    title: "Memory Game",
+    description:
+      "Aplicación web que permite jugar al memory, guardar tus partidas, crear tus propias categorias y cartas, entre otras funciones. Desarrollada utilizando Next.js, Typescript, Tailwind CSS y Laravel.",
+    repoUrl: "https://github.com/espinozagabriel0/proyecto-memory",
+    demoUrl: "https://proyecto-memory.vercel.app",
+    tools: [
+      icons.NextJS,
+      icons.TypeScript,
+      icons.Tailwind,
+      icons.Laravel,
+      "Shadcn UI",
+      icons.VERCEL,
+    ],
+    image: "/images/projects/memory.webp",
   },
 ];
 

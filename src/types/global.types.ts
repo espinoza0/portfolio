@@ -23,7 +23,7 @@ export type Proyecto = {
   title: string;
   description: string;
   repoUrl: string;
-  demoUrl: string;
+  demoUrl?: string;
   tools: Tool[];
   image: string;
 };

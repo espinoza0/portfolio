@@ -40,15 +40,13 @@ export default function Hero() {
           Hola, soy Gabriel
         </h1>
         <p className="text-lg md:text-xl text-gray-300">
-          Desarrollador web junior con gran interés en el desarrollo de una idea
-          a un producto real. Aún estudiando y explorando nuevas tecnologías.
+          Desarrollador web con formación en CFGS Desarrollo de Aplicaciones Web
+          (DAW). Me apasiona convertir ideas en productos reales, creando
+          experiencias digitales agradables y funcionales. Busco continuar
+          aprendiendo y mejorar para ofrecer soluciones prácticas y creativas.
         </p>
         <div className="flex items-center flex-wrap md:justify-center gap-3 mt-6 ">
-          <Button
-            asChild
-            variant="custom"
-            className="min-w-[120px] rounded-xl"
-          >
+          <Button asChild variant="custom" className="min-w-[120px] rounded-xl">
             <a
               href="/cv-gabrielBascope.pdf"
               download
@@ -80,11 +78,7 @@ export default function Hero() {
               />
             </a>
           </Button>
-          <Button
-            asChild
-            variant="custom"
-            className="min-w-[120px] rounded-xl"
-          >
+          <Button asChild variant="custom" className="min-w-[120px] rounded-xl">
             <a
               href="mailto:gabriel.bascope005@gmail.com"
               aria-label="Enviar correo a Gabriel (se abre una aplicación de correo)"
