@@ -65,26 +65,26 @@ const proyectos: Proyecto[] = [
   //   tools: [icons.HTML, icons.BOOTSTRAP, "SASS", icons.Render],
   //   image: "/images/projects/vimeo.webp",
   // },
-  {
-    category: "FRONTEND",
-    title: "Portafolio Personal",
-    description:
-      "Mi portafolio personal donde muestro mis proyectos, habilidades y experiencia. Además de haber aprendido un poco más sobre accesiblidad y usabilidad, habiendo realizado informes de ambos.",
-    repoUrl: "https://github.com/espinoza0/portfolio",
-    tools: [
-      icons.NextJS,
-      icons.TypeScript,
-      icons.Tailwind,
-      "Shadcn UI",
-      icons.VERCEL,
-    ],
-    image: "/images/projects/portfolio.webp",
-  },
+  // {
+  //   category: "FRONTEND",
+  //   title: "Portafolio Personal",
+  //   description:
+  //     "Mi portafolio personal donde muestro mis proyectos, habilidades y experiencia. Además de haber aprendido un poco más sobre accesiblidad y usabilidad, habiendo realizado informes de ambos.",
+  //   repoUrl: "https://github.com/espinoza0/portfolio",
+  //   tools: [
+  //     icons.NextJS,
+  //     icons.TypeScript,
+  //     icons.Tailwind,
+  //     "Shadcn UI",
+  //     icons.VERCEL,
+  //   ],
+  //   image: "/images/projects/portfolio.webp",
+  // },
   {
     category: "FULLSTACK",
     title: "Memory Game",
     description:
-      "Aplicación web que permite jugar al memory, guardar tus partidas, crear tus propias categorias y cartas, entre otras funciones. Desarrollada utilizando Next.js, Typescript, Tailwind CSS y Laravel.",
+      "Aplicación web que permite jugar al memory, autenticarse, hacer un seguimiento de tus partidas y ver un ranking de otros jugadores. Desarrollada utilizando Next.js, Typescript, Tailwind CSS y Laravel.",
     repoUrl: "https://github.com/espinozagabriel0/proyecto-memory",
     demoUrl: "https://proyecto-memory.vercel.app",
     tools: [
@@ -93,6 +93,7 @@ const proyectos: Proyecto[] = [
       icons.Tailwind,
       icons.Laravel,
       "Shadcn UI",
+      "JWT",
       icons.VERCEL,
     ],
     image: "/images/projects/memory.webp",
