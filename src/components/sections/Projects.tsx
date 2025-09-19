@@ -5,25 +5,26 @@ import ProjectCard from "../ProjectCard";
 import { Proyecto } from "@/types/global.types";
 
 const proyectos: Proyecto[] = [
-  // {
-  //   category: "FRONTEND",
-  //   title: "Tip Calculator App",
-  //   description:
-  //     "Aplicación web sencilla para calcular propinas, usando HTML, CSS y Javascript.",
-  //   repoUrl: "https://github.com/espinoza0/tip-calculator-app",
-  //   demoUrl: "https://espinoza0.github.io/tip-calculator-app/",
-  //   tools: [icons.HTML, icons.CSS, icons.JavaScript],
-  //   image: "/images/projects/tip-calc.webp",
-  // },
   {
-    category: "FRONTEND",
-    title: "Job Listing Filter",
+    category: "FULLSTACK",
+    title: "FlowBoard",
     description:
-      "Aplicación web que permite filtrar una lista de ofertas de trabajo mediante tags.",
-    repoUrl: "https://github.com/espinoza0/static-job-listing-filter",
-    demoUrl: "https://grand-cucurucho-515e7f.netlify.app/",
-    tools: [icons.React, icons.Tailwind, icons.Netlify],
-    image: "/images/projects/job-listing.webp",
+      "FlowBoard es una herramienta de gestión de proyectos inspirada en Trello. Permite a los usuarios crear tableros personalizados, tareas y hacer seguimiento del progreso de sus proyectos de manera visual e intuitiva. Actualemnte se encuentra en desarrollo.",
+    repoUrl: "https://github.com/espinoza0/Kanban-App",
+    // demoUrl: "https://grand-cucurucho-515e7f.netlify.app/",
+    tools: [
+      icons.React,
+      icons.Tailwind,
+      icons.TypeScript,
+      "JWT",
+      "Shadcn UI",
+      icons.VERCEL,
+      "API",
+      icons.NodeJS,
+      icons.Express,
+      icons.Sequelize
+    ],
+    image: "/images/projects/flowboard.webp",
   },
   {
     category: "FRONTEND",
@@ -55,31 +56,6 @@ const proyectos: Proyecto[] = [
     tools: [icons.React, icons.Tailwind, icons.Render, "API", "Material UI"],
     image: "/images/projects/movie-tv-discover.webp",
   },
-  // {
-  //   category: "FRONTEND",
-  //   title: "Vimeo Copy",
-  //   description:
-  //     "Clon estático del sitio web de vimeo, en el que se integran animaciones, transiciones y diseño responsivo. El proyecto se realizó con HTML, CSS, SASS y Bootstrap.",
-  //   repoUrl: "https://github.com/espinoza0/pr3-vimeo",
-  //   demoUrl: "https://pr3-vimeo.onrender.com/",
-  //   tools: [icons.HTML, icons.BOOTSTRAP, "SASS", icons.Render],
-  //   image: "/images/projects/vimeo.webp",
-  // },
-  // {
-  //   category: "FRONTEND",
-  //   title: "Portafolio Personal",
-  //   description:
-  //     "Mi portafolio personal donde muestro mis proyectos, habilidades y experiencia. Además de haber aprendido un poco más sobre accesiblidad y usabilidad, habiendo realizado informes de ambos.",
-  //   repoUrl: "https://github.com/espinoza0/portfolio",
-  //   tools: [
-  //     icons.NextJS,
-  //     icons.TypeScript,
-  //     icons.Tailwind,
-  //     "Shadcn UI",
-  //     icons.VERCEL,
-  //   ],
-  //   image: "/images/projects/portfolio.webp",
-  // },
   {
     category: "FULLSTACK",
     title: "Memory Game",
@@ -94,6 +70,8 @@ const proyectos: Proyecto[] = [
       icons.Laravel,
       "Shadcn UI",
       "JWT",
+      "API",
+      icons.MySQL,
       icons.VERCEL,
     ],
     image: "/images/projects/memory.webp",

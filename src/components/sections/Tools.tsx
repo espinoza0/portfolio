@@ -24,8 +24,7 @@ export default function Tools() {
         )}
       >
         <h2 className="text-4xl bg-gradient-to-t text-left md:text-center from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
-          Tecnologías
-          <span></span>
+          Tecnologías / Herramientas
         </h2>
         <Tabs
           defaultValue="all"

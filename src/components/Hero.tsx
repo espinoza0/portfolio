@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="flex items-center flex-wrap md:justify-center gap-3 mt-6 ">
           <Button asChild variant="custom" className="min-w-[120px] rounded-xl">
             <a
-              href="/cv-gabrielBascope.pdf"
+              href="/cv-gabrielBascope-ES-f-2.pdf"
               download
               aria-label="Descargar Currículum Vitae"
             >
