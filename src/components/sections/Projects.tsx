@@ -3,6 +3,9 @@
 import icons from "@/components/icons/icons";
 import ProjectCard from "../ProjectCard";
 import { Proyecto } from "@/types/global.types";
+import { cn } from "@/lib/utils";
+import { useRef } from "react";
+import { useIsVisible } from "@/hooks/useIsVisible";
 
 const proyectos: Proyecto[] = [
   {
@@ -22,7 +25,7 @@ const proyectos: Proyecto[] = [
       "API",
       icons.NodeJS,
       icons.Express,
-      icons.Sequelize
+      icons.Sequelize,
     ],
     image: "/images/projects/flowboard.webp",
   },
@@ -79,12 +82,21 @@ const proyectos: Proyecto[] = [
 ];
 
 export default function Projects() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIsVisible(ref);
+
   return (
     <section
       id="proyectos"
       className="text-white my-20 max-w-5xl mx-auto text-center pt-12 scroll-mt-7"
     >
-      <h2 className="text-4xl mb-10 text-left md:text-center bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
+      <h2
+        className={cn(
+          "text-4xl mb-10 text-left md:text-center bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent transition duration-700 ease-in",
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        )}
+        ref={ref}
+      >
         Proyectos
       </h2>
       <div className="my-5">

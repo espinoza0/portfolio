@@ -1,21 +1,9 @@
-import { useRef } from "react";
-import { useIsVisible } from "../hooks/useIsVisible";
 import { cn } from "@/lib/utils";
 import { ExperienceItemProps } from "@/types/global.types";
 
 export function ExperienceItem({ exp }: ExperienceItemProps) {
-  const ref = useRef<HTMLLIElement>(null);
-  const isVisible = useIsVisible(ref);
-
   return (
-    <li
-      ref={ref}
-      className={cn(
-        "mb-10",
-        "transition duration-700 ease-in",
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-      )}
-    >
+    <li className={"mb-10"}>
       <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 dark:border-gray-900 dark:bg-gray-700"></div>
       <div className="ml-5">
         <time className="mb-1 text-sm font-normal leading-none text-gray-300 dark:text-gray-500">

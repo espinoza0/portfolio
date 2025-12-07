@@ -1,7 +1,10 @@
 "use client";
 
+import { useRef } from "react";
 import { ExperienceItem } from "../ExperienceItem";
 import icons from "../icons/icons";
+import { useIsVisible } from "@/hooks/useIsVisible";
+import { cn } from "@/lib/utils";
 
 const experiences = [
   {
@@ -25,20 +28,31 @@ const experiences = [
 ];
 
 export default function Experience() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIsVisible(ref);
+
   return (
     <section
       id="experiencia"
       className="text-white text-center my-20 max-w-3xl mx-auto pt-10 scroll-mt-5"
     >
-      <h2 className="text-4xl text-left md:text-center mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
-        Experiencia
-      </h2>
-      <div className="my-5 mx-auto">
-        <ol className="relative border-s border-gray-200/30 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
-          {experiences.map((exp, index) => (
-            <ExperienceItem key={index} exp={exp} />
-          ))}
-        </ol>
+      <div
+        ref={ref}
+        className={cn(
+          "transition duration-700 ease-in",
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        )}
+      >
+        <h2 className="text-4xl text-left md:text-center mt-5 bg-gradient-to-t from-white via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent">
+          Experiencia
+        </h2>
+        <div className="my-5 mx-auto">
+          <ol className="relative border-s border-gray-200/30 dark:border-gray-700 text-left max-w-[50rem] mx-auto">
+            {experiences.map((exp, index) => (
+              <ExperienceItem key={index} exp={exp} />
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );
