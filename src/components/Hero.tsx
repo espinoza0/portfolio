@@ -18,7 +18,7 @@ export default function Hero() {
         className={cn(
           "max-w-4xl text-left md:text-center space-y-6",
           "transition duration-700 ease-in",
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5",
         )}
       >
         <a
@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="flex items-center flex-wrap md:justify-center gap-3 mt-6 ">
           <Button asChild variant="custom" className="min-w-[120px] rounded-xl">
             <a
-              href="/cv-gabrielBascope-ES-f-2.pdf"
+              href="/cv-gabrielBascope3.pdf"
               download
               aria-label="Descargar Currículum Vitae"
             >

@@ -14,7 +14,7 @@ const proyectos: Proyecto[] = [
     description:
       "FlowBoard es una herramienta de gestión de proyectos inspirada en Trello. Permite a los usuarios crear tableros personalizados, tareas y hacer seguimiento del progreso de sus proyectos de manera visual e intuitiva. Actualmente se encuentra en desarrollo.",
     repoUrl: "https://github.com/espinoza0/Kanban-App",
-    // demoUrl: "https://grand-cucurucho-515e7f.netlify.app/",
+    demoUrl: "https://flowboard.gabrielbascope.com",
     tools: [
       icons.React,
       icons.Tailwind,
@@ -93,7 +93,7 @@ export default function Projects() {
       <h2
         className={cn(
           "text-4xl mb-10 text-left md:text-center bg-gradient-to-t from-zinc-50 via-zinc-400 to-zinc-700/80 bg-clip-text text-transparent transition duration-700 ease-in",
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5",
         )}
         ref={ref}
       >
