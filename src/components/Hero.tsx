@@ -29,7 +29,7 @@ export default function Hero() {
         >
           <div className="flex items-center">
             <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,rgba(0,0,0,0.4)_40%,#3b82f6_100%)]"></span>
+              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,rgba(0,0,0,0.4)_40%,#3b82f6_100%)]"></span>
               <div className="inline-flex items-center justify-center w-full px-3 py-1 text-sm rounded-full cursor-pointer bg-gray-800 text-white/80 backdrop-blur-3xl whitespace-nowrap">
                 Disponible para trabajar
               </div>
