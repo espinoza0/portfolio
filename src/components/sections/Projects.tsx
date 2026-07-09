@@ -12,7 +12,7 @@ const proyectos: Proyecto[] = [
     category: "FULLSTACK",
     title: "FlowBoard",
     description:
-      "FlowBoard es una herramienta de gestión de proyectos inspirada en Trello. Permite a los usuarios crear tableros personalizados, tareas y hacer seguimiento del progreso de sus proyectos de manera visual e intuitiva. Actualmente se encuentra en desarrollo.",
+      "FlowBoard es una herramienta de gestión de proyectos inspirada en Trello. Permite a los usuarios crear tableros personalizados, tareas y hacer seguimiento del progreso de sus proyectos de manera visual e intuitiva.",
     repoUrl: "https://github.com/espinoza0/Kanban-App",
     demoUrl: "https://flowboard.gabrielbascope.com",
     tools: [
