@@ -27,6 +27,7 @@ const proyectos: Proyecto[] = [
       icons.Express,
       icons.Sequelize,
       icons.Swagger,
+      icons.Cloudinary
     ],
     image: "/images/projects/flowboard.webp",
   },
